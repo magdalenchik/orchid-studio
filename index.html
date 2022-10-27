@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Logo icon on tab  -->
+    <link rel="icon" href="/img/orchid logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+
+
+    <!-- Smooth scrolling for Safari -->
+    <script
+    defer
+    src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+  ></script>
+
+    <title>Orchid Studio</title>
+  </head>
+
+  <body>
+    <!-- NAVIGATION BAR -->
+    <header class="header">
+      <a href="#"> <img class="logo" alt="Orchid logo" src="img/LOGO.png" </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a class="main-nav-link" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#aboutus">About us</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#classes">Classes</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#contactus">Contact us</a>
+          </li>
+          <li>
+            <a class="main-nav-link btn" href="#joinnow">Join now</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home-page" >
+        <div class="video-backround">
+          <video autoplay muted loop id="myVideo">
+            <source src="/dancer.mp4" type="video/mp4"
+          </video>
+        </div>
+
+        <div class="container">
+          <img src="/img/home-logo.png" class="home-logo" alt="Orchid Logo"
+        </div>
+
+        <div class="dance-style">
+          <ul class="dance-style-list">
+            <li>
+              <a class="dance-link" href="#">Contemporan</a>
+            </li>
+            <li>
+              <a class="dance-link" href="#">Ballet</a>
+            </li>
+            <li>
+              <a class="dance-link" href="#">Commercial</a>
+            </li>
+            <li>
+              <a class="dance-link" href="#">Heels</a>
+            </li>
+            <li>
+              <a class="dance-link" href="#">Hip Hop</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- /**************************/
+      /* SECTION: ABOUT US */
+      /**************************/ -->
+
+      <section class="about-us container" id="aboutus">
+        <img
+          src="/img/yellow girl.png"
+          class="yellow-girl"
+          alt="A girl dancing in a yellow dress"
+        />
+
+        <div class="about-us-box">
+          <h1 class="heading text-purple-highlight">About us</h1>
+          <p class="dance-description">
+            Orchid Studio is a professional dance studio set up to provide
+            professional training in many styles of dance, while having the
+            space to develop the individual's career to their utmost potential.
+            It focuses on building a dancer's mindset by providing small classes
+            that allow students to work with teachers who have dedicated their
+            lives to the art of dance. They are dedicated to teaching the
+            children who come to them, the passion of dance and how to channel
+            their emotion in a way that will help them overcome the physical and
+            emotional obstacles to them.
+          </p>
+
+          <form class="register-form" name="sign-up" id="joinnow">
+            <div>
+              <label for="full-name"></label>
+              <input id="full-name" type="text" placeholder="Enter your name"
+              name="full-name" required
+            </div>
+
+            <div>
+              <label for="email"></label>
+              <input id="email" type="email" placeholder="Enter your email"
+              name="email" required
+            </div>
+
+            <div>
+              <label for="number"></label>
+              <input id="number" type="number" placeholder="Enter your phone "
+            </div>
+
+            <div class="membership" >
+              <label for="select-where"
+                ><strong>Choose your membership &#8659;</strong></label
+              >
+              <select id="select-where" name="select-where" required>
+                <option value="">Please choose one option</option>
+                <option value="commercial">Commercial Choreo</option>
+                <option value="heels">Heels & Basics</option>
+                <option value="contemporan">Contemporan Flow</option>
+                <option value="hip-hop">Hip Hop Choreo</option>
+                <option value="bachata">Bachata</option>
+                <option value="ballet">Ballet</option>
+                <option value="dancehall">Dancehall</option>
+              </select>
+            </div>
+            <button class="btn--form">Join now</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- /**************************/
+      /* SECTION: MEET OUR TEAM */
+      /**************************/ -->
+
+      <section class="section-dancers container" id="classes">
+        <div class="dancers-container">
+          <h1 class="heading-dancers">Meet our team of dance instructors</h1>
+
+          <div class="dancers">
+            <img
+              src="/img/girl1.png"
+              class="dancer-img emma-img"
+              alt="A girl dancing"
+            />
+
+            <blockquote class="dancer-description emma">
+              Emma is a commercial dance instructor in Los Angeles, California.
+              She spent her early years training in commercial dance and ballet
+              at Whitney Center of Dance in New York. As a child, she danced at
+              Bally’s, The Mirage, and The Venetian in Las Vegas, where she was
+              a member of dance company, Soaring Angels.
+            </blockquote>
+
+            <img
+              src="/img/girl2.png"
+              class="dancer-img amelia-img"
+              alt="A girl dancing"
+            />
+
+            <blockquote class="dancer-description amelia">
+              Amelia is serious, passionate, sensitive, and intelligent; she's
+              already learned much from Nikolas and other instructors from
+              around the world. She is intensely interested in learning to
+              dance, and her excitement at learning is the only thing that
+              sustains her from feeling hopeless in the face of defeat. She's
+              searching for the passion she lost and can only hope that once she
+              discovers it, it will never go away.
+            </blockquote>
+
+            <img
+              src="/img/girl3.png"
+              class="dancer-img mia-img"
+              alt="A girl dancing"
+            />
+
+            <blockquote class="dancer-description mia">
+              Mia is a professional balerina and she studied dance at the Royal
+              Academy of Ballet in London, and she had some great advice about
+              pursuing your passions and making them happen: I would encourage
+              people to follow their passions. I would say, if you have passion
+              for ballet or dancing or anything else and you want to pursue
+              that, go for it!
+            </blockquote>
+
+            <img
+              src="/img/boy4.png"
+              class="dancer-img paul-img"
+              alt="A girl dancing"
+            />
+
+            <blockquote class="dancer-description paul paul-text">
+              Paul is a hip hop professional dancer and choreographer, teaching
+              private lessons for kids, young adults and adults. Paul also runs
+              a workshop called Social Dance Compassion, which teaches empathy
+              through dancing. Hip hop is a culture where people are allowed to
+              dance, sing, create music, create art, and share their visions
+              through dance.
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pricing" id="pricing">
+        <h1 class="heading-dancers">Pricing</h1>
+
+        <div class="container grid grid--4-cols">
+          <div class="pricing-plan">
+            <p class="plan-name">Beginner</p>
+            <p class="plan-price"><span>$</span>30</p>
+            <p class="plan-time">2 days / week</p>
+            <a class="main-nav-link btn-pricing" href="#joinnow">Join now</a>
+          </div>
+          <div class="pricing-plan">
+            <p class="plan-name">Middle</p>
+            <p class="plan-price"><span>$</span>50</p>
+            <p class="plan-time">4 days / week</p>
+            <a class="main-nav-link btn-pricing" href="#joinnow">Join now</a>
+          </div>
+          <div class="pricing-plan">
+            <p class="plan-name">Senior</p>
+            <p class="plan-price"><span>$</span>80</p>
+            <p class="plan-time">6 days / week</p>
+            <a class="main-nav-link btn-pricing" href="#joinnow">Join now</a>
+          </div>
+          <div class="pricing-plan">
+            <p class="plan-name">Pro</p>
+            <p class="plan-price"><span>$</span>100</p>
+            <p class="plan-time">unlimited</p>
+            <a class="main-nav-link btn-pricing" href="#joinnow">Join now</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-gallery" id="gallery">
+        <div class="container">
+          <h1 class="heading-dancers">Gallery</h1>
+          <div class="gallery grid grid--4-cols">
+            <figure class="gallery-item">
+              <img src="/img/gallery1.jpg" alt="" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="/img/gallery2.jpg" alt="" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="/img/gallery3.jpg" alt="" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="/img/gallery4.jpg" alt="" />
+            </figure>
+
+            <figure class="gallery-item">
+              <img src="/img/gallery5.jpg" alt="" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="/img/gallery6.jpg" alt="" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="/img/gallery7.jpg" alt="" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="/img/gallery8.jpg" alt="" />
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 
+      /**************************/
+     /*  FOOTER*/
+     /**************************/ -->
+
+    <footer class="footer" id="contactus">
+      <div class="container">
+        <h1 class="">Orchid Studio</h1>
+        <div class="contact grid grid--footer">
+          <div class="logo-footer">
+            <!-- <a href="#" class="footer-logo">
+              <img class="logo" alt="Orchid logo" src="/img/orchid logo.png" />
+            </a> -->
+
+            <ul class="social-links">
+              <li>
+                <a class="footer-link" href="#">
+                  <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">
+                  <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a class="footer-link" href="#">
+                  <ion-icon
+                    class="social-icon"
+                    name="logo-instagram"
+                  ></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="adress">
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="home-outline"></ion-icon>
+            </a>
+            <p><strong>Long Beach, California 90805, USA</strong></p>
+          </div>
+
+          <div class="copyrights">
+            <p>Copyright &copy; 2022 by Orchid Studio, Inc.</p>
+          <div class="copyrights">
+            <p>All rights reserved</p>
+          </div>
+        </div>
+      </div>
+
+   
+    </footer>
+
+    <div class="google-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22222.0425392254!2d-118.18626595444913!3d33.85669276010787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd331e01be6bad%3A0x64a8477f491f5393!2sHollywoods%20Best%20Movers%20Long%20Beach!5e0!3m2!1sro!2sro!4v1666904207808!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
